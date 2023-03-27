@@ -1,4 +1,4 @@
-package com.example.estudiantesValidacion.model;
+package com.example.estudiantesvalidacion.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

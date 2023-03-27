@@ -1,8 +1,8 @@
-package com.example.estudiantesValidacion.Controller;
+package com.example.estudiantesvalidacion.controller;
 
-import com.example.estudiantesValidacion.model.User;
-import com.example.estudiantesValidacion.repository.UserRepository;
-import com.example.estudiantesValidacion.useCase.ResourceNotFoundExeption;
+import com.example.estudiantesvalidacion.model.User;
+import com.example.estudiantesvalidacion.repository.UserRepository;
+import com.example.estudiantesvalidacion.usecase.ResourceNotFoundExeption;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

@@ -1,13 +1,13 @@
-package com.example.estudiantesValidacion.Controller;
+package com.example.estudiantesvalidacion.controller;
 
 import static org.mockito.Mockito.any;
 import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.doThrow;
 import static org.mockito.Mockito.when;
 
-import com.example.estudiantesValidacion.model.User;
-import com.example.estudiantesValidacion.repository.UserRepository;
-import com.example.estudiantesValidacion.useCase.ResourceNotFoundExeption;
+import com.example.estudiantesvalidacion.model.User;
+import com.example.estudiantesvalidacion.repository.UserRepository;
+import com.example.estudiantesvalidacion.usecase.ResourceNotFoundExeption;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.util.ArrayList;

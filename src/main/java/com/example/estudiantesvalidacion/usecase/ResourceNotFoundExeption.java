@@ -1,4 +1,4 @@
-package com.example.estudiantesValidacion.useCase;
+package com.example.estudiantesvalidacion.usecase;
 
 
 import org.springframework.http.HttpStatus;

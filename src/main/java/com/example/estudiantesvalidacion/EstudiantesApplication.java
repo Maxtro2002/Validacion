@@ -1,13 +1,13 @@
-package com.example.estudiantesValidacion;
+package com.example.estudiantesvalidacion;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class estudiantesApplication {
+public class EstudiantesApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(estudiantesApplication.class, args);
+		SpringApplication.run(EstudiantesApplication.class, args);
 	}
 
 }
