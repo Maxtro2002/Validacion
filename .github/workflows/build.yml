@@ -28,9 +28,6 @@ jobs:
           key: ${{ runner.os }}-sonar
           restore-keys: ${{ runner.os }}-sonar
 
-      - name: compile and test
-        uses: mvn package
-
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@v1.9
         env:
