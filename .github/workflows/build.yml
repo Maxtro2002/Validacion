@@ -38,14 +38,14 @@ jobs:
         uses: sonarsource/quality-gate-action@v2
         with:
           project-key: Maxtro2002_Validacion
-          organization: <Your organization key> # Opcional, en caso de usar una organización en SonarCloud
+          organization: maxtro2002
           token: ${{ secrets.SONAR_TOKEN }}
       
       - name: SonarCloud Quality Gate
         uses: sonarsource/quality-gate-action@v2
         with:
           project-key: Maxtro2002_Validacion
-          organization: <Your organization key> # Opcional, en caso de usar una organización en SonarCloud
+          organization: maxtro2002
           token: ${{ secrets.SONAR_TOKEN }}
         if: always() && github.ref == 'refs/heads/main'
 
