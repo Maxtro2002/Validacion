@@ -40,11 +40,9 @@ jobs:
           project-key: Maxtro2002_Validacion
           organization: maxtro2002
           token: ${{ secrets.SONAR_TOKEN }}
-      
-      - name: SonarCloud Quality Gate
-        uses: sonarsource/quality-gate-action@v2
-        with:
-          project-key: Maxtro2002_Validacion
-          organization: maxtro2002
-          token: ${{ secrets.SONAR_TOKEN }}
-        if: always() && github.ref == 'refs/heads/main'
+
+      - name: Build and analyze
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=Maxtro2002_Validacion
